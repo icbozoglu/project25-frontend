@@ -2,11 +2,7 @@ import { useState } from "react";
 
 const UserSignUpPage = () => {
 
-  const [user, setUser] = useState({
-    email: "",
-    password: "",
-    passwordRepeat: "",
-  });
+  const [user, setUser] = useState({email: "", password: "",  passwordRepeat: ""});
 
   const onChange = (e) => {
     setUser({...user, [e.target.id]:e.target.value});
