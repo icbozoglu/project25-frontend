@@ -15,9 +15,12 @@ const UserSignUpPage = () => {
     e.preventDefault();
     setPendingApiCall(true);
 
-    signup(user)
-    .then(response => {setPendingApiCall(false)})
-    .catch(error => {setPendingApiCall(false)});
+    try{
+      const response = await signup(user);
+    }catch(error){
+
+    }
+    {setPendingApiCall(false)}
   }
 
   return (
