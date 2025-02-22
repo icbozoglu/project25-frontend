@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import UserSignUpPage from './pages/SignUp/UserSignUpPage.js'
+import './bootstrap-override.scss';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
